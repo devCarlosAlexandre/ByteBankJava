@@ -3,16 +3,21 @@ public class Cliente {
 	private String nome;
 	private String cpf;
 	private String profissao;
+	
+	// Seters---------------------------------------------------------------------------------------------
 
-	// Geters----------------------------------------------------------------------------------------------
-	public void getDadosCliente() {
-		System.out.println("---------------------------DADOS CLIENTE---------------------------");
-		System.out.println("Nome: "+this.nome);
-		System.out.println("Profissão: "+this.profissao);
-		System.out.println("CPF: "+this.cpf);
+		public void seterNome(String nome) {
+			this.nome = nome;
+		}
+
+		public void seterCpf(String cpf) {
+			this.cpf = cpf;
+		}
+
+		public void seterProfissao(String profissao) {
+			this.profissao = profissao;
+		}
 		
-
-	}
 	public String getNome() {
 		return this.nome;
 	}
@@ -25,18 +30,12 @@ public class Cliente {
 		return this.profissao;
 	}
 
-	// Seters---------------------------------------------------------------------------------------------
-
-	public void seterNome(String nome) {
-		this.nome = nome;
-	}
-
-	public void seterCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
-	public void seterProfissao(String profissao) {
-		this.profissao = profissao;
+	// Geters----------------------------------------------------------------------------------------------
+	public void getDadosCliente() {
+		System.out.println("---------------------------DADOS CLIENTE---------------------------");
+		System.out.println("Nome: " + this.nome);
+		System.out.println("Profissão: " + this.profissao);
+		System.out.println("CPF: " + this.cpf);
 	}
 
 }
