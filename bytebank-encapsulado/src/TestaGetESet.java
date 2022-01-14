@@ -14,7 +14,7 @@ public class TestaGetESet {
 
 		System.out.println("Informe digito da sua conta");
 		int digitoConta = entrada.nextInt();
-		Conta conta = new Conta(numeroConta, digitoConta);
+		Conta conta = new ContaCorrente(numeroConta, digitoConta);
 		//setando dados cliente
 		cliente.seterNome(entrada.nextLine());
 		System.out.println(cliente.getNome());
