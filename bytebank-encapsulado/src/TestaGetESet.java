@@ -26,11 +26,15 @@ public class TestaGetESet {
 
 		System.out.println("Informe sua profissão: ");
 		conta.getTitular().seterProfissao(entrada.nextLine());
+		conta.deposito(1200);
+		Conta c2 = new ContaCorrente(02, 5435);
+		conta.transfere(150, c2);
 
 		System.out.println("Informe seu CPF: ");
 		conta.getTitular().seterCpf(entrada.nextLine());
-
 		conta.getDadosConta();
+		System.out.println( c2.getSaldo());
+		System.out.println( conta.getSaldo());
 
 	}
 }
