@@ -16,11 +16,11 @@ public abstract class  Conta {
 /**
  * Parar intanciar um filho da classe conta é necessario passar como paramentros numero inteiro de uma agencia
  * e um numero inteiro da numeração da conta, onde nem o numero da conta e nem o numero da agencia podem ser iagual
- * ou menor que zero.
+ * ou menor que zero e também é necessario associar um cliente a esta conta. 
  * @param agencia
  * @param numero
  */
-	public Conta(int agencia, int numero) {
+	public Conta(int agencia, int numero, Cliente cliente) {
 		total++;
 		this.agencia = agencia;
 		if (agencia <= 0) {
@@ -32,6 +32,7 @@ public abstract class  Conta {
 			System.out.println("Voce não pode iniciar uma conta com este número de conta!");
 			return;
 		}
+		this.setTitular(cliente);
 
 		System.out.println("Conta criada com sucesso!");
 	}

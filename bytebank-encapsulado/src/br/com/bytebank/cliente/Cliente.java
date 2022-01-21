@@ -1,12 +1,19 @@
 package br.com.bytebank.cliente;
 
+import br.com.bytebank.conta.*;
+
+/**
+ * Para criar um cliente é obrigatorio passar como parametro uma conta associado ao cliente.
+ * @author carlos
+ *
+ */
 public class Cliente {
 	private String nome;
 	private String cpf;
 	private String profissao;
 	
 	// Seters---------------------------------------------------------------------------------------------
-
+	
 		public void seterNome(String nome) {
 			this.nome = nome;
 		}

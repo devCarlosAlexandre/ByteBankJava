@@ -1,7 +1,10 @@
 package br.com.bytebank.conta;
+
+import br.com.bytebank.cliente.Cliente;
+
 public class ContaCorrente extends Conta {
-	public ContaCorrente(int agencia, int numero) {
-		super(agencia, numero);
+	public ContaCorrente(int agencia, int numero, Cliente cliente) {
+		super(agencia, numero, cliente);
 	}
 	@Override
 	public boolean transfere(double valor, Conta destino) {
