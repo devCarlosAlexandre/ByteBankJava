@@ -1,4 +1,4 @@
-
+package br.com.bytebank.conta;
 public class ContaPoupanca extends Conta {
 	public ContaPoupanca(int agencia, int numero) {
 		super(agencia, numero);

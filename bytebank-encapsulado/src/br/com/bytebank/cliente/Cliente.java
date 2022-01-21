@@ -1,3 +1,4 @@
+package br.com.bytebank.cliente;
 
 public class Cliente {
 	private String nome;

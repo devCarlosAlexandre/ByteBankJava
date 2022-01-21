@@ -1,6 +1,10 @@
+package br.com.bytebank.cliente;
 import java.util.*;
 
-public class TestaGetESet {
+import br.com.bytebank.conta.Conta;
+import br.com.bytebank.conta.ContaCorrente;
+
+public class UtilizaConta {
 
 	public static void main(String[] args) {
 		System.out.println("Olá seja bem-vindo ao Byte Bank!");
